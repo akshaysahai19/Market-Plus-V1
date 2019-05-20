@@ -4,13 +4,13 @@ import java.util.List;
 
 public class Scan {
 
-    long id;
-    String name;
-    String tag;
-    String color;
-    List<Criteria> criteria;
+    private long id;
+    private String name;
+    private String tag;
+    private String color;
+    private List<Object> criteria;
 
-    public Scan(long id, String name, String tag, String color, List<Criteria> criteria) {
+    public Scan(long id, String name, String tag, String color, List<Object> criteria) {
         this.id = id;
         this.name = name;
         this.tag = tag;
@@ -53,11 +53,11 @@ public class Scan {
         this.color = color;
     }
 
-    public List<Criteria> getCriteria() {
+    public List<Object> getCriteria() {
         return criteria;
     }
 
-    public void setCriteria(List<Criteria> criteria) {
+    public void setCriteria(List<Object> criteria) {
         this.criteria = criteria;
     }
 }

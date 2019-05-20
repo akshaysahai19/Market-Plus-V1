@@ -47,11 +47,13 @@ public class ScanViewModel extends ViewModel {
             @Override
             public void onResponse(Call<List<Scan>> call, Response<List<Scan>> response) {
                 //finally we are setting the list to our MutableLiveData
+                System.out.printf("trying");
                 scanList.setValue(response.body());
             }
 
             @Override
             public void onFailure(Call<List<Scan>> call, Throwable t) {
+                System.out.printf("trying00");
             }
         });
     }
